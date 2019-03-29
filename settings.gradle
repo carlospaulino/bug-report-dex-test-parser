@@ -1,0 +1,1 @@
+include ":app-java7", ":app-java8", ":tests"

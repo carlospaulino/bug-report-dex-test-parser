@@ -1,0 +1,9 @@
+apply plugin: "java"
+apply plugin: "kotlin"
+
+dependencies {
+  testImplementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.21"
+  testImplementation "com.linkedin.dextestparser:parser:2.0.1"
+  testImplementation "junit:junit:4.12"
+  testImplementation "org.assertj:assertj-core:3.11.1"
+}

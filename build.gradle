@@ -1,0 +1,23 @@
+buildscript {
+  repositories {
+    google()
+    jcenter()
+  }
+  dependencies {
+    classpath "com.android.tools.build:gradle:3.3.2"
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.21"
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
+}
+
+task reproduceBug {
+  dependsOn ':app-java7:assembleAndroidTest'
+  dependsOn ':app-java8:assembleAndroidTest'
+  dependsOn ':tests:test'
+}
